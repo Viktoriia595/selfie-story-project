@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея Selfie Story – Selfie Story</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ХЕДЕР -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Selfie Story</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="team.html">Наша команда</a></li>
+          <li><a href="services.html">Послуги</a></li>
+          <li><a href="works.html" class="active">Наші роботи</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="info.html">Інформація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- КОНТЕНТ -->
+  <main class="container works-section">
+    <h2 class="page-title light">НАШІ РОБОТИ</h2>
+    <p class="subtitle">@selfie__story</p>
+
+    <div class="gallery">
+
+      <div class="gallery-item">
+        <img src="images/work1.jpg" alt="Робота 1">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/work2.jpg" alt="Робота 2">
+      </div>
+
+      <div class="gallery-item">
+        <video controls>
+          <source src="videos/work-video1.mp4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/work3.jpg" alt="Робота 3">
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ЛАЙТБОКС (для зображень) -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img src="" alt="Збільшене зображення" id="lightbox-img">
+  </div>
+
+  <!-- ФУТЕР -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Selfie Story. Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

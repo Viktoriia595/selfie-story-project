@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Послуги – Selfie Story</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ХЕДЕР -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Selfie Story</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="team.html">Наша команда</a></li>
+          <li><a href="services.html" class="active">Послуги</a></li>
+          <li><a href="works.html">Наші роботи</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="info.html">Інформація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ГОЛОВНИЙ КОНТЕНТ -->
+  <main class="container">
+    <h2 class="page-title">ПОСЛУГИ</h2>
+
+    <div class="services-grid">
+
+      <!-- Послуга 1 — Курс макіяжу -->
+      <div class="service-card course-block">
+        <h3>Курс макіяжу</h3>
+        <hr>
+        <p>2 500 грн</p>
+        <button class="toggle-course">Переглянути курс</button>
+      </div>
+
+      <!-- Інформаційний блок (прихований за замовчуванням) -->
+      <div id="course-info" class="course-info hidden">
+        <h4>Про курс</h4>
+        <p><strong>Курс макіяжу Selfie Story</strong> — це інтенсивна 5-денна програма з практикою, яка допоможе вам опанувати сучасні техніки макіяжу, підібрати індивідуальний стиль і навчитися створювати wow-образи для будь-яких подій 💋</p>
+
+        <ul>
+          <li>📌 Вивчення форми обличчя та типу шкіри</li>
+          <li>🎨 Робота з кольором, світлом і тінню</li>
+          <li>💼 Практика з моделями</li>
+          <li>📸 Фото для портфоліо</li>
+        </ul>
+
+        <p><strong>Формат:</strong></p>
+        <ul>
+          <li>👩‍🏫 Індивідуальний — з майстром 1 на 1</li>
+          <li>👥 Груповий — до 5 учасників</li>
+        </ul>
+
+        <p><strong>Тривалість:</strong> 5 днів (Пн–Пт), курс проходить 1 раз на місяць</p>
+
+        <div class="faq-block">
+          <h4>Часті питання</h4>
+          <div class="faq-item">
+            <p class="faq-question">❓ Чи потрібні навички перед курсом?</p>
+            <p class="faq-answer">Ні, курс розрахований як для початківців, так і для тих, хто хоче вдосконалити базу. Ви отримаєте всі необхідні знання з нуля.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-question">❓ Що включено в ціну?</p>
+            <p class="faq-answer">У вартість входить навчання, всі матеріали для практики, сертифікат, зйомка портфоліо та кава-паузи ☕</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-question">❓ Чи можна отримати сертифікат?</p>
+            <p class="faq-answer">Так, усі учасники, які успішно завершать курс, отримують сертифікат Selfie Story.</p>
+          </div>
+        </div>
+
+        <button class="open-modal">Записатися</button>
+      </div>
+
+      <!-- Інші послуги -->
+      <div class="service-card">
+        <h3>Перманентний макіяж</h3>
+        <hr>
+        <p>2 000 грн</p>
+        <button class="open-modal">Записатися</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Манікюр</h3>
+        <hr>
+        <p>400 грн</p>
+        <button class="open-modal">Записатися</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Макіяж</h3>
+        <hr>
+        <p>500 грн</p>
+        <button class="open-modal">Записатися</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Зачіски</h3>
+        <hr>
+        <p>500 грн</p>
+        <button class="open-modal">Записатися</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Корекція та фарбування брів</h3>
+        <hr>
+        <p>350 грн</p>
+        <button class="open-modal">Записатися</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 🔔 МОДАЛЬНЕ ВІКНО -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Форма запису</h3>
+      <form id="bookingForm">
+        <label>Ім'я:<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>Номер телефону:<br>
+          <input type="tel" name="phone" required>
+        </label><br><br>
+
+        <label>Послуга:<br>
+          <select name="service" required>
+            <option value="">Оберіть послугу</option>
+            <option value="курс макіяжу">Курс макіяжу</option>
+            <option value="макіяж">Макіяж</option>
+            <option value="манікюр">Манікюр</option>
+            <option value="зачіски">Зачіски</option>
+            <option value="перманентний макіяж">Перманентний макіяж</option>
+            <option value="корекція брів">Корекція та фарбування брів</option>
+          </select>
+        </label><br><br>
+
+        <label>Дата і час:<br>
+          <input type="datetime-local" name="datetime" required>
+        </label><br><br>
+
+        <button type="submit">Підтвердити запис</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
